@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consutar CEP</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>Patrick <br><span>Dev.</span></h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li id="quemSouEu"  class="menu"><a href="#">Quem sou eu ?</a></li>
+                <li class="menu"><a href="#">Tabuada</a></li>
+                <li class="menu"><a href="#">Portfólio completo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">      
+        <form>
+            <h1>Consultar CEP <img src="lupa.png" alt="lupa"></h1>
+            <div id="aviso">*Digite apenas o CEP e os outros campos preencherão-se automaticamente.</div#>
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" class="form-control" maxlength="9" id="cep">
+                <small>00000-000</small>
+            </div>
+            <div class="form-group">
+                <label for="logradouro">logradouro:</label>
+                <input type="text" class="form-control" id="logradouro">
+                <small> Ex: Av. das Américas, 2000 </small>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro:</label>
+                <input type="text" class="form-control" id="bairro">
+                <small>Ex: Nova Iguaçu</small>
+            </div>
+            <div class="form-group">
+                <label for="localidade">Localidade:</label>
+                <input type="text" class="form-control" id="localidade">
+                <small>Ex: Rio de Janeiro</small>
+            </div>
+            <div class="form-group">
+                <label for="uf">UF:</label>
+                <input type="text" class="form-control" id="uf">
+                <small>Ex: RJ</small>
+            </div>
+
+            
+        </form>
+
+        <ul id="redesSociais">
+            <a target="_blank" href="https://github.com/candtrick">
+                <li><img src="github.png" alt="githut-link"> /candtrick</li>
+            </a><br>
+
+            <a target="_blank" href="https://www.linkedin.com/in/patrick-candido-a342b9217">
+                <li><img src="linkedin.png" alt="linkedin-link"> Patrick Candido</li><br>
+            </a>
+
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5521981475633">
+                <li><img src="whatsapp.png" alt="whatsapp-link"> +55 (21) 98147-5633</li><br>
+            </a>
+
+            <a target="_blank" href="https://www.instagram.com/candtrick/">
+                <li><img src="instagram.png" alt="instagram-link"> /candtrick</li>
+            </a>
+        </ul> 
+
+        <div class="me">Dev. Patrick Candido</div>
+
+    </div>
+    
+    <script src="src/js/main.js"></script>
+</body>
+</html>
